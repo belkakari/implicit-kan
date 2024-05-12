@@ -10,5 +10,5 @@ For now it looks like KANs also needs fourier features and MLP still beats KANs.
 ## Loss plots
 ![train plots](./static/convergence.png)
 
-## EfficientKAN vs FastKAN vs MLP
+## EfficientKAN grid 5 vs EfficientKAN grid 7 vs MLP
 ![kan vs mlp](./static/converge.gif)

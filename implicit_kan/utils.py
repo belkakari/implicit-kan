@@ -1,3 +1,5 @@
+import random
+
 import numpy as np
 import torch
 
@@ -18,3 +20,10 @@ def get_grid(h, w, b=0, norm=True, device="cpu"):
         return grid.permute(0, 3, 1, 2)  # [Batch, UV, H, W]
     else:
         return grid[0].permute(2, 0, 1)  # [UV, H, W]
+
+
+def set_random_seed(seed):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
